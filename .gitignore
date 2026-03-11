@@ -1,0 +1,26 @@
+# Models (Large files)
+*.7z
+*.model
+*.vec
+*.npy
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+workspace.venv/
+Lib/
+Scripts/
+etc/
+share/
+
+# IDEs
+.idea/
+.vscode/
+
+# Project specific
+test_engine.py
+vocab.txt
+model_ro.7z
+SG_pruned_PCA.model

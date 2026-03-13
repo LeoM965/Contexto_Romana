@@ -1,6 +1,6 @@
-streamlit
+streamlit==1.32.2
 requests
-numpy<2.0.0
+numpy==1.26.4
 py7zr
-gensim>=4.3.0
-scipy>=1.10.0
+gensim==4.3.2
+scipy==1.11.4

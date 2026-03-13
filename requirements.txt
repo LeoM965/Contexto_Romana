@@ -1,5 +1,6 @@
 streamlit
 requests
-numpy
+numpy==1.26.4
 py7zr
-gensim
+gensim==4.3.2
+scipy==1.11.4

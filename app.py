@@ -128,7 +128,6 @@ if guess_input:
     guess = guess_input.strip().lower()
     if guess and guess not in [g['word'] for g in st.session_state.guesses]:
         if guess in engine.model or guess == st.session_state.secret_word:
-            # Handle Rank 1
             if guess == st.session_state.secret_word:
                 rank = 1
                 similarity = 1.0
@@ -141,7 +140,6 @@ if guess_input:
                 "rank": rank,
                 "similarity": similarity
             })
-            # Re-sort guesses by rank
             st.session_state.guesses.sort(key=lambda x: x['rank'])
         else:
             st.error(f"Cuvântul '{guess}' nu este în dicționarul nostru.")
